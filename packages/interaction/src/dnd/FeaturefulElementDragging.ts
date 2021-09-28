@@ -71,7 +71,7 @@ export class FeaturefulElementDragging extends ElementDragging {
       // also prevents selection in older browsers (maybe?).
       // not necessary for touch, besides, browser would complain about passiveness.
       if (!ev.isTouch) {
-        ev.origEvent.preventDefault()
+//         ev.origEvent.preventDefault()
       }
 
       this.emitter.trigger('pointerdown', ev)
